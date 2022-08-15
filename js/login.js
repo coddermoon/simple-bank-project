@@ -13,6 +13,7 @@ const login =(event)=>{
 
   if (email === 'bap@sontan.com' && pass === 'fokinni') {
     showMassage('successfully added', 'success')
+    window.location.href = 'bank.html'
   }else{
     showMassage('invalid email & password try again', 'danger')
   }
