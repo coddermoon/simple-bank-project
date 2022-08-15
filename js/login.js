@@ -2,6 +2,7 @@
 const loginBtn = document.getElementById('login');
 const inputEmail = document.getElementById('email')
 const inputPass = document.getElementById('password')
+const massage = document.getElementById('massage')
 
 const login =(event)=>{
   event.preventDefault();
@@ -11,15 +12,26 @@ const login =(event)=>{
   //veryfied email and password 
 
   if (email === 'bap@sontan.com' && pass === 'fokinni') {
-    console.log('sussessfully loged in');
+    showMassage('successfully added', 'success')
   }else{
-    console.log('try again')
+    showMassage('invalid email & password try again', 'danger')
   }
 
 
 }
 
+// show massage function
 
+// show massage function
+
+const showMassage = (text, status) => {
+    massage.textContent = text
+    massage.classList.add(`bg-${status}`)
+    setTimeout(() => {
+      massage.textContent = ''
+      massage.classList.remove(`bg-${status}`)
+    }, 1000)
+  }
 
 
 
