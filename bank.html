@@ -21,16 +21,16 @@
 
                 <div class="card bg-pink-400 py-8 align-center rounded-lg ">
                     <h4 class="text-center text-3xl font-medium text-white">Diposit</h4>
-                    <h3 class="text-5xl text-center text-white">$0</h3>
+                    <h3 class="text-5xl text-center text-white">$<span id="diposit">0</span> </h3>
                 </div>
                 <div class="card bg-slate-400 py-8 align-center rounded-lg">
                     <h4 class="text-center text-3xl font-medium text-white">Withdraw</h4>
-                    <h3 class="text-5xl text-center text-white">$0</h3>
+                    <h3 class="text-5xl text-center text-white">$<span id="withdraw">0</span></h3>
                 </div>
 
                 <div class="card bg-violet-400 py-8 align-center rounded-lg">
                     <h4 class="text-center text-3xl font-medium text-white">Balance</h4>
-                    <h3 class="text-5xl text-center text-white">$0</h3>
+                    <h3 class="text-5xl text-center text-white">$<span id="balance">1140</span></h3>
                 </div>
             </div>
           
@@ -39,18 +39,22 @@
             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto bg-violet-400 p-14 rounded-lg">
                 <div class="bg-fuchsia-400 p-8 rounded-xl">
                     <h4 class="text-2xl mb-4  text-white">Please Deposit</h4>
-                    <input class="w-9/12 block p-3 mb-3" type="text" name="" placeholder="$ Amount you want to deposit">
+                    <input id = "input-deposit" class="w-9/12 block p-3 mb-3" type="text" name="" placeholder="$ Amount you want to deposit">
                     <button id="btn-deposit" class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Deposit</button>
                 </div>
                 <div class="bg-sky-400 p-8 rounded-xl">
                     <h4 class="text-2xl mb-4  text-white">Please Withdraw</h4>
-                    <input class="w-9/12 block p-3 mb-3" type="text" placeholder="$ Amount you want to withdraw">
-                    <button class="bg-amber-300 px-8 py-3 text-white font-medium rounded-lg text-left hover:bg-sky-700"
+                    <input id="input-withdraw" class="w-9/12 block p-3 mb-3" type="text" placeholder="$ Amount you want to withdraw">
+                    <button id="btn-withdraw" class="bg-amber-300 px-8 py-3 text-white font-medium rounded-lg text-left hover:bg-sky-700"
                     >Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- script tag -->
+    <script src="js/withdraw.js"></script>
+
 </body>
 </html>
 
